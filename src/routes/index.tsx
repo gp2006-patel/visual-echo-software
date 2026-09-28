@@ -1,24 +1,51 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Nav } from "@/components/layout/Nav";
+import { Footer } from "@/components/layout/Footer";
+import { Hero } from "@/components/hero/Hero";
+import { SelectedWork } from "@/components/work/SelectedWork";
+import { Services } from "@/components/sections/Services";
+import { Process } from "@/components/sections/Process";
+import { Journal } from "@/components/sections/Journal";
+import { Testimonials } from "@/components/sections/Testimonials";
+import { Contact } from "@/components/sections/Contact";
+import { site } from "@/data/site";
 
-// No head() here: the home route inherits title/description/og/twitter from
-// __root.tsx, and ships no og:image so serve-time hosting can inject the
-// project's social preview (explicit og:image or latest screenshot).
+const title = `${site.studio} — Interior Design in ${site.city} | Spaces With Soul`;
+const description = `${site.studio} creates thoughtful residential, commercial, and hospitality interiors shaped by light, material, proportion, and personality.`;
+
 export const Route = createFileRoute("/")({
+  head: () => ({
+    meta: [
+      { title },
+      { name: "description", content: description },
+      { name: "theme-color", content: "#0A0A0B" },
+      { property: "og:title", content: title },
+      { property: "og:description", content: description },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: title },
+      { name: "twitter:description", content: description },
+    ],
+    links: [{ rel: "canonical", href: site.canonical }],
+  }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
 function Index() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
+    <div id="top" className="min-h-screen bg-background">
+      <div className="grain-overlay" aria-hidden="true" />
+      <Nav />
+      <main>
+        <Hero />
+        <SelectedWork />
+        <Services />
+        <Process />
+        <Journal />
+        <Testimonials />
+        <Contact />
+      </main>
+      <Footer />
     </div>
   );
 }
