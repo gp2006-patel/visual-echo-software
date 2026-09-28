@@ -123,14 +123,14 @@ export function ParticleField({
     const material = materialRef.current;
     if (!material) return;
     const dt = Math.min(delta, 0.05);
-    material.uniforms.uTime!.value += dt;
-    material.uniforms.uProgress!.value = progress.get();
-    material.uniforms.uScale!.value = Math.min(size.height / 900, 1.2);
+    material.uniforms['uTime']!.value += dt;
+    material.uniforms['uProgress']!.value = progress.get();
+    material.uniforms['uScale']!.value = Math.min(size.height / 900, 1.2);
 
     const p = pointer.current;
     p.x += (p.tx - p.x) * (1 - Math.exp(-3 * dt));
     p.y += (p.ty - p.y) * (1 - Math.exp(-3 * dt));
-    (material.uniforms.uParallax!.value as THREE.Vector2).set(p.x, p.y);
+    (material.uniforms['uParallax']!.value as THREE.Vector2).set(p.x, p.y);
   });
 
   return (
