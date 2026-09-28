@@ -45,9 +45,9 @@ export function RippleFloor({ progress }: { progress: MotionValue<number> }) {
   useFrame((_, delta) => {
     const material = materialRef.current;
     if (!material) return;
-    material.uniforms.uTime!.value += Math.min(delta, 0.05);
+    material.uniforms['uTime']!.value += Math.min(delta, 0.05);
     const p = progress.get();
-    material.uniforms.uOpacity!.value = THREE.MathUtils.smoothstep(p, 0.6, 0.82);
+    material.uniforms['uOpacity']!.value = THREE.MathUtils.smoothstep(p, 0.6, 0.82);
   });
 
   return (
