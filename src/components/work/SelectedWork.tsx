@@ -40,7 +40,7 @@ export function SelectedWork() {
                 onClick={() => setIndex(i)}
                 className="group block w-full overflow-hidden rounded-2xl border border-border text-left"
               >
-                <span className={`relative block w-full overflow-hidden ${aspects[i]}`}>
+                <span className={`relative block w-full overflow-hidden ${aspects[i % aspects.length]}`}>
                   <img
                     src={project.image}
                     alt={project.alt}

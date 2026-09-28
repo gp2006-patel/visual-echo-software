@@ -19,8 +19,8 @@ export const journal: JournalEntry[] = [
     date: "March 2026",
     excerpt:
       "On limestone, oiled oak, and the quiet pleasure of surfaces that age rather than wear out.",
-    image: u("1615529182904-14819c35db37"),
-    alt: "Close study of stone and timber material samples",
+    image: "/projects/project_3.jpg",
+    alt: "Bespoke joinery and material details",
   },
   {
     id: "j2",
@@ -29,8 +29,8 @@ export const journal: JournalEntry[] = [
     date: "January 2026",
     excerpt:
       "How a single window, correctly proportioned, can do more for a room than any light fitting.",
-    image: u("1505691938895-1758d7feb511"),
-    alt: "Sunlight falling across a plastered interior wall",
+    image: "/projects/project_4.jpg",
+    alt: "Natural light illuminating courtyard kitchen architecture",
   },
   {
     id: "j3",
@@ -39,7 +39,7 @@ export const journal: JournalEntry[] = [
     date: "November 2025",
     excerpt:
       "Notes from a year of residential work, and what clients actually remember about their homes.",
-    image: u("1493809842364-78817add7ffb"),
-    alt: "Armchair and side table in a softly lit corner",
+    image: "/projects/project_5.jpg",
+    alt: "Sculptural fluted timber craftsmanship in Indore",
   },
 ];
