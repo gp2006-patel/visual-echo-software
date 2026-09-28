@@ -15,8 +15,8 @@ const u = (id: string, w = 1200) =>
 export const projects: Project[] = [
   {
     id: "p1",
-    title: "[Project Name]",
-    location: "[City]",
+    title: "The Malwa Residence",
+    location: "Indore",
     year: 2026,
     category: "Residential",
     image: u("1616486338812-3dadae4b4ace"),
@@ -25,8 +25,8 @@ export const projects: Project[] = [
   },
   {
     id: "p2",
-    title: "[Project Name]",
-    location: "[City]",
+    title: "Amber Lounge & Bar",
+    location: "Indore",
     year: 2025,
     category: "Hospitality",
     image: u("1618221195710-dd6b41faaea6"),
@@ -35,8 +35,8 @@ export const projects: Project[] = [
   },
   {
     id: "p3",
-    title: "[Project Name]",
-    location: "[City]",
+    title: "The Atelier Headquarters",
+    location: "Indore",
     year: 2025,
     category: "Commercial",
     image: u("1497366216548-37526070297c"),
@@ -45,8 +45,8 @@ export const projects: Project[] = [
   },
   {
     id: "p4",
-    title: "[Project Name]",
-    location: "[City]",
+    title: "Gulmohar Pavilion",
+    location: "Indore",
     year: 2024,
     category: "Residential",
     image: u("1600210492486-724fe5c67fb0"),
@@ -55,8 +55,8 @@ export const projects: Project[] = [
   },
   {
     id: "p5",
-    title: "[Project Name]",
-    location: "[City]",
+    title: "Kalyan Sanctuary",
+    location: "Indore",
     year: 2024,
     category: "Styling",
     image: u("1567016432779-094069958ea5"),
@@ -65,8 +65,8 @@ export const projects: Project[] = [
   },
   {
     id: "p6",
-    title: "[Project Name]",
-    location: "[City]",
+    title: "Sarafa Heritage Suite",
+    location: "Indore",
     year: 2023,
     category: "Hospitality",
     image: u("1560448204-e02f11c3d0e2"),

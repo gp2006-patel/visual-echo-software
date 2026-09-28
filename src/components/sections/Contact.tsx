@@ -13,7 +13,7 @@ interface FormState {
 type Errors = Partial<Record<keyof FormState, string>>;
 
 const projectTypes = ["Residential", "Commercial", "Hospitality", "Styling", "Consultation", "Other"];
-const budgets = ["Under [Currency]", "[Range]", "[Range]", "[Range]", "Discuss privately"];
+const budgets = ["Under ₹25 Lakhs", "₹25L – ₹50 Lakhs", "₹50L – ₹1 Crore", "₹1 Crore+", "Discuss privately"];
 
 const initialState: FormState = {
   name: "",
@@ -69,12 +69,22 @@ export function Contact() {
           />
           <ul className="mt-10 space-y-3 text-sm text-muted-foreground">
             <li>
-              <a href="#" className="transition-colors hover:text-brass">
-                Instagram · {site.instagram}
+              <a
+                href={site.instagram}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition-colors hover:text-brass"
+              >
+                Instagram · @dream_homevisuals
               </a>
             </li>
             <li>
-              <a href="#" className="transition-colors hover:text-brass">
+              <a
+                href={`https://wa.me/91${site.whatsapp.replace(/\D/g, "")}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition-colors hover:text-brass"
+              >
                 WhatsApp · {site.whatsapp}
               </a>
             </li>

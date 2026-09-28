@@ -1,10 +1,10 @@
 export const site = {
-  studio: "[Studio Name]",
-  city: "[City]",
+  studio: "Ganesh Patel",
+  city: "Indore",
   tagline: "Spaces With Soul.",
-  email: "[Email]",
-  whatsapp: "[WhatsApp]",
-  instagram: "[Instagram]",
+  email: "gp039962@gmail.com",
+  whatsapp: "+91 9479417089",
+  instagram: "https://www.instagram.com/dream_homevisuals?stkn=ZXljbGVlMTF1YWox",
   canonical: "https://example.com/",
 } as const;
 

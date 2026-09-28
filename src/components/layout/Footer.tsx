@@ -27,12 +27,22 @@ export function Footer() {
         <div className="flex flex-col gap-4 border-t border-border pt-6 text-sm text-muted-foreground sm:flex-row sm:items-center sm:justify-between">
           <ul className="flex flex-wrap gap-5">
             <li>
-              <a href="#" className="transition-colors hover:text-brass">
-                Instagram · {site.instagram}
+              <a
+                href={site.instagram}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition-colors hover:text-brass"
+              >
+                Instagram · @dream_homevisuals
               </a>
             </li>
             <li>
-              <a href="#" className="transition-colors hover:text-brass">
+              <a
+                href={`https://wa.me/91${site.whatsapp.replace(/\D/g, "")}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition-colors hover:text-brass"
+              >
                 WhatsApp · {site.whatsapp}
               </a>
             </li>

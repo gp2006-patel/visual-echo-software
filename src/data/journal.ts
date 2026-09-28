@@ -14,7 +14,7 @@ const u = (id: string) =>
 export const journal: JournalEntry[] = [
   {
     id: "j1",
-    title: "[Journal Title]",
+    title: "The Tactile Weight of Malwa Stone",
     category: "Material Study",
     date: "March 2026",
     excerpt:
@@ -24,7 +24,7 @@ export const journal: JournalEntry[] = [
   },
   {
     id: "j2",
-    title: "[Journal Title]",
+    title: "Morning Light in High-Ceiling Haveli Interiors",
     category: "Light",
     date: "January 2026",
     excerpt:
@@ -34,7 +34,7 @@ export const journal: JournalEntry[] = [
   },
   {
     id: "j3",
-    title: "[Journal Title]",
+    title: "Conversations with Central India's Timber Artisans",
     category: "Studio Notes",
     date: "November 2025",
     excerpt:
