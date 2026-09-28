@@ -80,14 +80,4 @@ export const projects: Project[] = [
     alt: "Detailed architectural elevation and shop drawings with imperial dimensions and 3D render",
     description: "Comprehensive technical shop drawings and 3D visualization detailing wardrobe elevations, internal layout dimensions (11'-0\"), PU ivory finishes, and brass accents.",
   },
-  {
-    id: "p8",
-    title: "Studio Principal — Ganesh Patel",
-    location: "Indore",
-    year: 2024,
-    category: "Studio & Leadership",
-    image: "/projects/project_8.jpg",
-    alt: "Ganesh Patel, founder and principal designer in Indore",
-    description: "Ganesh Patel leads the studio with an uncompromising commitment to material authenticity, precision joinery, and soulful architectural spaces in Indore.",
-  },
 ];
